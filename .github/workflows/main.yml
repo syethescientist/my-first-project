@@ -1,0 +1,15 @@
+name: GitHub Actions Demo
+
+on: [push]  # This workflow runs every time you push code.
+
+jobs:
+  example-job:
+    runs-on: ubuntu-latest  # Use a virtual machine with Ubuntu.
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3  # Step to pull your repository code.
+
+      - name: Print Hello World
+        run: echo "Hello, GitHub Actions!"  # Print a message in the workflow logs.
+
